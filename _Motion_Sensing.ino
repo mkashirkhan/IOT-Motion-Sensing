@@ -5,8 +5,8 @@
 
 #define AIO_SERVER      "io.adafruit.com"
 #define AIO_SERVERPORT  1883
-#define AIO_USERNAME    "MKashirK"
-#define AIO_KEY         "aio_inqg8626uoyawe1NbWHAC4UKBpH1"
+#define AIO_USERNAME    "Adafruit IO Username"
+#define AIO_KEY         "KEY"
 
 #define ledPin 5 // Red LED
 #define pirPin 4 // Input for HC-SR501
@@ -30,7 +30,7 @@ void setup()
   digitalWrite(ledPin, LOW);
 
   // Connect to Wi-Fi
-  WiFi.begin("Optics_Wifi", "D3DA8866");
+  WiFi.begin("SSID", "Password");
   while (WiFi.status() != WL_CONNECTED)
   {
     delay(1000);
